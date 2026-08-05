@@ -10,8 +10,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ================= MENU ================= */
-
 .menu {
     width: 100%;
     height: 60px;
@@ -73,8 +71,6 @@ body {
     color: #ffffff;
 }
 
-/* ================= CONTEÚDO PRINCIPAL ================= */
-
 .conteudo-principal {
  width: 100%;
  min-height: calc(100vh - 180px);  
@@ -106,7 +102,6 @@ body {
     line-height: 1.5;
 }
 
-/* Botão */
 .botao-container {
     display: flex;
 }
@@ -128,8 +123,6 @@ body {
 .botao:hover {
     background-color: #23471e;
 }
-
-/* ================= CARDS HTML E CSS ================= */
 
 .conteudo-cards {
     width: 100%;
@@ -206,27 +199,23 @@ footer h5{
 	text-align: center;	    
 }
 
-/* ================= PÁGINA FUTURO (CENTRALIZADA) ================= */
-
-/* Ajusta o layout principal para centralizar tudo */
 .conteudo-principal.centralizado {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: calc(100vh - 120px); /* Garante que ocupe a tela toda menos o menu/rodapé */
+    min-height: calc(100vh - 120px); 
 }
 
-/* Caixa verde que fica no meio da tela */
 .caixa-centro {
     background-color: #224b2c;
     padding: 40px;
     border-radius: 10px;
-    max-width: 65%; /* Define a largura da caixa */
+    max-width: 65%; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os itens dentro da caixa horizontalmente */
-    text-align: center;  /* Centraliza o texto */
-    gap: 25px; /* Espaço entre o título, texto e o botão */
+    align-items: center; 
+    text-align: center;  
+    gap: 25px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -235,15 +224,12 @@ footer h5{
     font-size: 32px;
 }
 
-/* Container específico para centralizar o botão na página futuro */
 .botao-container-centro {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 10px;
 }
-
-/* ================= RODAPÉ ================= */
 
 footer {     
     width: 100%;     
