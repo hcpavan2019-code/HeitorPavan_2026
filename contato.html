@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+	<head>
+        <title>Exercício de fixação sobre formulários - Cadastro de produtos</title>
+	    <meta charset="utf-8"/> 
+		<meta name="viewport" content="width=device-width, inicial-scale=1"/> 
+		<link rel="icon" type="image/jpg" href="files/cinema.jpg">
+		<link rel="stylesheet" type="text/css" href="files/style.css">  
+		<script language="javascript" type="text/javascript">
+			function validar(){
+				var nome = nota.nome.value;
+                var nota1 = nota.nota1.value;
+
+				if(nome==""){
+					alert('Preencha o campo NOME');
+					nota.nome.focus();
+					return false;
+				}	
+
+                if(nota1==""){
+					alert('Preencha o campo NOTA');
+					nota.nota1.focus();
+					return false;
+				}
+
+                return true;
+			}
+			function processarform(){
+				if(validar()){
+					alert("Dados enviados com sucesso!");
+					nota.reset();
+				}
+                
+				return false;
+			}
+		</script> 
+	</head>
+	<body>
+		<main>
+			 <div class="menu">
+            <div class="center">
+                <div class="texto-menu">
+                    <p>MEU SONHO DE INFANCIA 🎥</p>
+                </div>
+                <ul>
+                    <li><a href="index.html">SONHO</a></li>
+                    <li><a href="hoje.html">HOJE</a></li>
+                    <li><a href="futuro.html">FUTURO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+			<section>
+				<form name="nota" onsubmit="return processarform()" method="post">
+					<label>
+						Nome:
+						<input type="text" name="nome" size="40" maxlength="50">
+					</label>
+					<br><br>
+					<label>
+						Nota:
+						<select name="nota1">
+                            <option>
+
+                            </option>
+                            <option>
+                                1 ✨
+                            </option>
+                            <option>
+                                2 ✨✨
+                            </option>
+                            <option>
+                                3 ✨✨✨
+                            </option>
+                            <option>
+                                4 ✨✨✨✨
+                            </option>
+                            <option>
+                                5 ✨✨✨✨✨
+                            </option>
+                        </select>
+					</label>
+					<br><br> 
+					<label>
+						Comentário:
+						<textarea cols=“45” rows=“25” name="descriçao"></textarea>
+					</label>
+					<br><br>
+					<input type="submit" value="Enviar" onclick="return validar()">
+					<input type="reset" value="Limpar">
+				</form>
+			</section>
+		</main>
+		<footer>
+			<hr>
+			<div class="up">
+                <a href="#"><img src="files/seta1.png" alt="Seta para topo"></a>
+            </div>
+			<h5>Heitor Antonio Camonda Pavan 2026 - &copy;Todos os direitos reservados<br>Trabalho acadêmico sem fins lucrativos</h5>
+		</footer>
+	</body>
+</html>
